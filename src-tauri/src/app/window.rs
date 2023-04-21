@@ -33,6 +33,7 @@ pub fn tray_window(handle: &tauri::AppHandle) {
         .initialization_script(include_str!("../scripts/cmd.js"))
         .initialization_script(include_str!("../scripts/chat.js"))
         .initialization_script(include_str!("../scripts/popup.core.js"))
+        .initialization_script(include_str!("../scripts/keepchat.js"))
     }
 
     tray_win.build().unwrap().hide().unwrap();
